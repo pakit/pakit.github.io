@@ -57,7 +57,7 @@ body {
 }
 
 a {
-  color: #d5000d;
+  color: #0040ff;
 }
 a:hover {
   color: #c5000c;
@@ -255,13 +255,13 @@ h3 {
   margin-bottom: 8px;
   font-size: 18px;
   font-weight: bold;
-  color: #d5000d;
+  color: #0020ff;
 }
 
 h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #303030;
+  color: #0030ff;
 }
 
 h5 {

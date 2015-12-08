@@ -10,7 +10,7 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>Pakit.GitHub.io by pakit</title>
+    <title>Pakit</title>
   </head>
 
   <body>
@@ -20,8 +20,29 @@
       <h1><img alt="Pakit" src="images/pakit-logo.png" width="30%" /></h1>
       <h2>A Python Based Package Manager</h2>
     </header>
+
     <section id="downloads" class="clearfix">
-      <a href="https://github.com/pakit" id="view-on-github" class="button"><span>View on GitHub</span></a>
+      <p>
+        <a href="https://github.com/starcraftman/pakit" id="view-on-github" class="button"><span>Pakit Core</span></a>
+        <a href="https://github.com/starcraftman/pakit" id="view-on-github" class="button"><span>Pakit Group</span></a>
+      </p>
+    </section>
+
+    <hr>
+
+    <section id="badges">
+      <p>
+        <a class="reference external" href="https://travis-ci.org/starcraftman/pakit"><img alt="Travis" src="https://travis-ci.org/starcraftman/pakit.svg?branch=master" /></a>
+        <a class="reference external" href="https://coveralls.io/github/starcraftman/pakit?branch=master"><img alt="Coveralls" src="https://coveralls.io/repos/starcraftman/pakit/badge.svg?branch=master&amp;service=github" /></a>
+        <a class="reference external" href="http://waffle.io/starcraftman/pakit"><img alt="Stories in Ready" src="https://badge.waffle.io/starcraftman/pakit.svg?label=ready&amp;title=Ready" /></a>
+        <a class="reference external" href="https://gitter.im/starcraftman/pakit?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><object data="https://badges.gitter.im/Join%20Chat.svg" type="image/svg+xml">Join the chat at https://gitter.im/starcraftman/pakit</object></a>
+      </p>
+      <p>
+        <a class="reference external" href="https://pypi.python.org/pypi/pakit"><object data="https://img.shields.io/pypi/pyversions/pakit.svg" type="image/svg+xml">Python</object></a>
+        <a class="reference external" href="https://pypi.python.org/pypi/pakit"><object data="https://img.shields.io/pypi/l/Django.svg" type="image/svg+xml">License</object></a>
+        <a class="reference external" href="https://pypi.python.org/pypi/pakit"><object data="https://img.shields.io/pypi/v/pakit.svg" type="image/svg+xml">Version</object></a>
+        <a class="reference external" href="https://pypi.python.org/pypi/pakit"><object data="https://img.shields.io/pypi/status/pakit.svg" type="image/svg+xml">Status</object></a>
+      </p>
     </section>
 
     <hr>
@@ -52,7 +73,7 @@
     </ol>
 
     <p>Want a longer explanation? See the
-    <a class="reference external" href="#overview">Overview</a> section.</p>
+    <a class="reference internal" href="#overview">Overview</a> section.</p>
 
   <div class="section" id="demo">
     <h3>Demo</h3>
@@ -67,13 +88,14 @@
     <h3>Install Pakit</h3>
     <p>To use pakit:</p>
     <ol class="arabic simple">
-    <li>Ensure you have a <strong>build environment</strong> for compiling the programs.</li>
-    <li>Fetch pakit via <strong>pip</strong> or <strong>github</strong>.</li>
-    <li>Modify your <strong>$PATH</strong>.</li>
+
+    <li>Ensure you have a <a class="reference internal" href="#pip">build environment</a> for compiling the programs.</li>
+    <li>Fetch pakit via <a class="reference internal" href="#pip">pip</a> or <a class="reference internal" href="#github">github</a>.</li>
+    <li>Modify your <a class="reference internal" href="#path">$PATH</a>.</li>
     </ol>
   </div>
 
-  <div class="section" id="build-environment">
+  <div class="section" id="pip">
     <h4>Build Environment</h4>
     <p>At this point pakit has two limitations to be aware of:</p>
     <ul class="simple">
@@ -86,12 +108,11 @@
     <ul class="simple">
       <li>c++ build environment</li>
       <li>git</li>
-      <li>mercurial</li>
       <li>anything a recipe depends on that pakit can't build</li>
     </ul>
     <p>For Ubuntu install these packages:</p>
     <pre class="code bash literal-block">
-    sudo apt-get install build-essential automake autoconf python-pip git mercurial liblzma-dev libevent-dev ncurses-dev
+      sudo apt-get install build-essential automake autoconf python-pip git mercurial liblzma-dev libevent-dev ncurses-dev
     </pre>
   </div>
 
@@ -100,9 +121,9 @@
     <p>Fetch the latest from the source. Works unless the build badge says
     failing.</p>
     <pre class="code bash literal-block">
-    git clone https://github.com/starcraftman/pakit.git
-    <span class="name builtin">export </span><span class="name variable">PATH</span><span class="operator">=</span><span class="keyword">$(</span><span class="name builtin">pwd</span><span class="keyword">)</span>/pakit/bin:<span class="name variable">$PATH</span>
-    python pakit/setup.py deps release
+      git clone https://github.com/starcraftman/pakit.git
+      <span class="name builtin">export </span><span class="name variable">PATH</span><span class="operator">=</span><span class="keyword">$(</span><span class="name builtin">pwd</span><span class="keyword">)</span>/pakit/bin:<span class="name variable">$PATH</span>
+      python pakit/setup.py deps release
     </pre>
   </div>
 
@@ -110,18 +131,18 @@
     <h4>pip</h4>
     <p>Install the latest stable pip release. It might be old but working.</p>
     <pre class="code bash literal-block">
-    sudo -H pip install pakit
+      sudo -H pip install pakit
     </pre>
   </div>
 
   <div class="section" id="path">
-    <h4>PATH</h4>
+    <h4>$PATH</h4>
     <p>By default, pakit will install programs under <tt class="docutils literal">pakit.paths.prefix</tt> and
     link everything to <tt class="docutils literal">pakit.paths.link</tt>. To use the built programs,
     <tt class="docutils literal">pakit.paths.link</tt>/bin must be on your $PATH. So for example, with the
     default value of <tt class="docutils literal">pakit.paths.link</tt>, you would need to:</p>
     <pre class="code bash literal-block">
-    <span class="name builtin">export </span><span class="name variable">PATH</span><span class="operator">=</span>/tmp/pakit/links/bin:<span class="name variable">$PATH</span>
+      <span class="name builtin">export </span><span class="name variable">PATH</span><span class="operator">=</span>/tmp/pakit/links/bin:<span class="name variable">$PATH</span>
     </pre>
     <p>The above exports will only last for the terminal session. To make them
     permanent for bash, edit <tt class="docutils literal"><span class="pre">$HOME/.bashrc</span></tt> or <tt class="docutils literal"><span class="pre">$HOME/.bash_aliases</span></tt>.</p>
