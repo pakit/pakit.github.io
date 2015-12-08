@@ -1,211 +1,211 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Pakit</title>
-  </head>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <title>Pakit</title>
+</head>
 
-  <body>
-  <div id="container">
-  <div class="inner">
-    <header>
-      <h1><img alt="Pakit" src="images/pakit-logo.png" width="30%" /></h1>
-      <h2>A Python Based Package Manager</h2>
-    </header>
+<body>
+<div id="container">
+<div class="inner">
+  <header>
+    <h1><img alt="Pakit" src="images/pakit-logo.png" width="30%" /></h1>
+    <h2>A Python Based Package Manager</h2>
+  </header>
 
-    <section id="downloads" class="clearfix">
-      <p>
-        <a href="https://github.com/starcraftman/pakit" id="view-on-github" class="button"><span>Pakit Core</span></a>
-        <a href="https://github.com/starcraftman/pakit" id="view-on-github" class="button"><span>Pakit Group</span></a>
-      </p>
-    </section>
-
-    <hr>
-
-    <section id="badges">
-      <p>
-        <a class="reference external" href="https://travis-ci.org/starcraftman/pakit"><img alt="Travis" src="https://travis-ci.org/starcraftman/pakit.svg?branch=master" /></a>
-        <a class="reference external" href="https://coveralls.io/github/starcraftman/pakit?branch=master"><img alt="Coveralls" src="https://coveralls.io/repos/starcraftman/pakit/badge.svg?branch=master&amp;service=github" /></a>
-        <a class="reference external" href="http://waffle.io/starcraftman/pakit"><img alt="Stories in Ready" src="https://badge.waffle.io/starcraftman/pakit.svg?label=ready&amp;title=Ready" /></a>
-        <a class="reference external" href="https://gitter.im/starcraftman/pakit?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><object data="https://badges.gitter.im/Join%20Chat.svg" type="image/svg+xml">Join the chat at https://gitter.im/starcraftman/pakit</object></a>
-      </p>
-      <p>
-        <a class="reference external" href="https://pypi.python.org/pypi/pakit"><object data="https://img.shields.io/pypi/pyversions/pakit.svg" type="image/svg+xml">Python</object></a>
-        <a class="reference external" href="https://pypi.python.org/pypi/pakit"><object data="https://img.shields.io/pypi/l/Django.svg" type="image/svg+xml">License</object></a>
-        <a class="reference external" href="https://pypi.python.org/pypi/pakit"><object data="https://img.shields.io/pypi/v/pakit.svg" type="image/svg+xml">Version</object></a>
-        <a class="reference external" href="https://pypi.python.org/pypi/pakit"><object data="https://img.shields.io/pypi/status/pakit.svg" type="image/svg+xml">Status</object></a>
-      </p>
-    </section>
-
-    <hr>
-
-    <section id="main_content">
-
-    <h3>Description</h3>
-    <p>Pakit is a small python based package manager that builds programs from
-    source.</p>
-    <p>Pakit provides:</p>
-
-    <ol class="arabic simple">
-      <li>A package manager interface to install, remove &amp; update programs.</li>
-      <li>A simple Recipe specification to build programs from source code.</li>
-      <li>Premade and tested
-
-      <a class="reference external" href="https://github.com/pakit/base_recipes">recipes</a>
-      maintained by pakit.</li>
-    </ol>
-
-    <p>When you install a program Pakit will...</p>
-
-    <ol class="arabic simple">
-      <li>download the source into a silo in <tt class="docutils literal">pakit.paths.source</tt> and build
-      it.</li>
-      <li>install the program into a silo under <tt class="docutils literal">pakit.paths.prefix</tt>.</li>
-      <li>link the silo to the <tt class="docutils literal">pakit.paths.link</tt> directory.</li>
-    </ol>
-
-    <p>Want a longer explanation? See the
-    <a class="reference internal" href="#overview">Overview</a> section.</p>
-
-  <div class="section" id="demo">
-    <h3>Demo</h3>
-    <p>The following demonstration covers most of the basic functions.</p>
-    <p><a class="reference external" href="https://github.com/starcraftman/pakit/blob/master/DEMO.md#demo"><img alt="Pakit Demo" src="https://github.com/pakit/demo/raw/master/demo.gif"  /></a></p>
-    <p>Try the
-    <a class="reference external" href="https://github.com/starcraftman/pakit/blob/master/DEMO.md#demo">demo</a>
-    yourself after installing pakit.</p>
+  <div id="github" class="clearfix">
+    <p>
+      <a href="https://github.com/starcraftman/pakit" id="view-on-github" class="button"><span>Pakit Core</span></a>
+      <a href="https://github.com/starcraftman/pakit" id="view-on-github" class="button"><span>Pakit Group</span></a>
+    </p>
   </div>
 
-  <div class="section" id="install-pakit">
-    <h3>Install Pakit</h3>
-    <p>To use pakit:</p>
-    <ol class="arabic simple">
+  <hr>
 
-    <li>Ensure you have a <a class="reference internal" href="#pip">build environment</a> for compiling the programs.</li>
-    <li>Fetch pakit via <a class="reference internal" href="#pip">pip</a> or <a class="reference internal" href="#github">github</a>.</li>
-    <li>Modify your <a class="reference internal" href="#path">$PATH</a>.</li>
-    </ol>
+  <div id="badges">
+    <p>
+      <a class="reference external" href="https://travis-ci.org/starcraftman/pakit"><img alt="Travis" src="https://travis-ci.org/starcraftman/pakit.svg?branch=master" /></a>
+      <a class="reference external" href="https://coveralls.io/github/starcraftman/pakit?branch=master"><img alt="Coveralls" src="https://coveralls.io/repos/starcraftman/pakit/badge.svg?branch=master&amp;service=github" /></a>
+      <a class="reference external" href="http://waffle.io/starcraftman/pakit"><img alt="Stories in Ready" src="https://badge.waffle.io/starcraftman/pakit.svg?label=ready&amp;title=Ready" /></a>
+      <a class="reference external" href="https://gitter.im/starcraftman/pakit?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><object data="https://badges.gitter.im/Join%20Chat.svg" type="image/svg+xml">Join the chat at https://gitter.im/starcraftman/pakit</object></a>
+    </p>
+    <p>
+      <a class="reference external" href="https://pypi.python.org/pypi/pakit"><object data="https://img.shields.io/pypi/pyversions/pakit.svg" type="image/svg+xml">Python</object></a>
+      <a class="reference external" href="https://pypi.python.org/pypi/pakit"><object data="https://img.shields.io/pypi/l/Django.svg" type="image/svg+xml">License</object></a>
+      <a class="reference external" href="https://pypi.python.org/pypi/pakit"><object data="https://img.shields.io/pypi/v/pakit.svg" type="image/svg+xml">Version</object></a>
+      <a class="reference external" href="https://pypi.python.org/pypi/pakit"><object data="https://img.shields.io/pypi/status/pakit.svg" type="image/svg+xml">Status</object></a>
+    </p>
   </div>
 
-  <div class="section" id="pip">
-    <h4>Build Environment</h4>
-    <p>At this point pakit has two limitations to be aware of:</p>
-    <ul class="simple">
-      <li>Relies on user's build environment.</li>
-      <li>Pakit recipes can only depend on things pakit can build, currently
-      limited pool. User needs to install any dependencies pakit can't
-      build.</li>
-    </ul>
-    <p>To use pakit, I suggest you have...</p>
-    <ul class="simple">
-      <li>c++ build environment</li>
-      <li>git</li>
-      <li>anything a recipe depends on that pakit can't build</li>
-    </ul>
-    <p>For Ubuntu install these packages:</p>
-    <pre class="code bash literal-block">
-      sudo apt-get install build-essential automake autoconf python-pip git mercurial liblzma-dev libevent-dev ncurses-dev
-    </pre>
-  </div>
+  <hr>
 
-  <div class="section" id="github">
-    <h4>Github</h4>
-    <p>Fetch the latest from the source. Works unless the build badge says
-    failing.</p>
-    <pre class="code bash literal-block">
-      git clone https://github.com/starcraftman/pakit.git
-      <span class="name builtin">export </span><span class="name variable">PATH</span><span class="operator">=</span><span class="keyword">$(</span><span class="name builtin">pwd</span><span class="keyword">)</span>/pakit/bin:<span class="name variable">$PATH</span>
-      python pakit/setup.py deps release
-    </pre>
-  </div>
+  <section id="main_content">
 
-  <div class="section" id="pip">
-    <h4>pip</h4>
-    <p>Install the latest stable pip release. It might be old but working.</p>
-    <pre class="code bash literal-block">
-      sudo -H pip install pakit
-    </pre>
-  </div>
+  <h3>Description</h3>
+  <p>Pakit is a small python based package manager that builds programs from
+  source.</p>
+  <p>Pakit provides:</p>
 
-  <div class="section" id="path">
-    <h4>$PATH</h4>
-    <p>By default, pakit will install programs under <tt class="docutils literal">pakit.paths.prefix</tt> and
-    link everything to <tt class="docutils literal">pakit.paths.link</tt>. To use the built programs,
-    <tt class="docutils literal">pakit.paths.link</tt>/bin must be on your $PATH. So for example, with the
-    default value of <tt class="docutils literal">pakit.paths.link</tt>, you would need to:</p>
-    <pre class="code bash literal-block">
-      <span class="name builtin">export </span><span class="name variable">PATH</span><span class="operator">=</span>/tmp/pakit/links/bin:<span class="name variable">$PATH</span>
-    </pre>
-    <p>The above exports will only last for the terminal session. To make them
-    permanent for bash, edit <tt class="docutils literal"><span class="pre">$HOME/.bashrc</span></tt> or <tt class="docutils literal"><span class="pre">$HOME/.bash_aliases</span></tt>.</p>
-  </div>
+  <ol class="arabic simple">
+    <li>A package manager interface to install, remove &amp; update programs.</li>
+    <li>A simple Recipe specification to build programs from source code.</li>
+    <li>Premade and tested
 
-  <div class="section" id="more-information">
-    <h3>More Information</h3>
-    <p>From inside the pakit source folder:</p>
-    <ul class="simple">
-      <li>Help: <tt class="docutils literal">pakit <span class="pre">--help</span></tt></li>
-      <li>Consult man: <tt class="docutils literal">man pakit</tt></li>
-      <li>Read pydocs: <tt class="docutils literal">pydoc pakit</tt> or <tt class="docutils literal">pydoc pakit.shell</tt> and so on...</li>
-      <li>Install all development packages: <tt class="docutils literal">python setup.py deps</tt></li>
-      <li>Run the test suite: <tt class="docutils literal">tox</tt></li>
-      <li>See <a class="reference external" href="http://waffle.io/starcraftman/pakit">Waffle</a> for things I'm
-      working on.</li>
-      <li>Read <tt class="docutils literal">DESIGN.md</tt> for details on design. A bit out of date.</li>
-    </ul>
-  </div>
+    <a class="reference external" href="https://github.com/pakit/base_recipes">recipes</a>
+    maintained by pakit.</li>
+  </ol>
 
-  <div class="section" id="contributors">
-    <h3>Contributors</h3>
-    <ul class="simple">
-      <li><a href="https://github.com/starcraftman" class="user-mention">@starcraftman</a>/Jeremy Pallats</li>
-    </ul>
-  </div>
+  <p>When you install a program Pakit will...</p>
+
+  <ol class="arabic simple">
+    <li>download the source into a silo in <tt class="docutils literal">pakit.paths.source</tt> and build
+    it.</li>
+    <li>install the program into a silo under <tt class="docutils literal">pakit.paths.prefix</tt>.</li>
+    <li>link the silo to the <tt class="docutils literal">pakit.paths.link</tt> directory.</li>
+  </ol>
+
+  <p>Want a longer explanation? See the
+  <a class="reference internal" href="#overview">Overview</a> section.</p>
+
+<div class="section" id="demo">
+  <h3>Demo</h3>
+  <p>The following demonstration covers most of the basic functions.</p>
+  <p><a class="reference external" href="https://github.com/starcraftman/pakit/blob/master/DEMO.md#demo"><img alt="Pakit Demo" src="https://github.com/pakit/demo/raw/master/demo.gif"  /></a></p>
+  <p>Try the
+  <a class="reference external" href="https://github.com/starcraftman/pakit/blob/master/DEMO.md#demo">demo</a>
+  yourself after installing pakit.</p>
+</div>
+
+<div class="section" id="install-pakit">
+  <h3>Install Pakit</h3>
+  <p>To use pakit:</p>
+  <ol class="arabic simple">
+
+  <li>Ensure you have a <a class="reference internal" href="#pip">build environment</a> for compiling the programs.</li>
+  <li>Fetch pakit via <a class="reference internal" href="#pip">pip</a> or <a class="reference internal" href="#github">github</a>.</li>
+  <li>Modify your <a class="reference internal" href="#path">$PATH</a>.</li>
+  </ol>
+</div>
+
+<div class="section" id="pip">
+  <h4>Build Environment</h4>
+  <p>At this point pakit has two limitations to be aware of:</p>
+  <ul class="simple">
+    <li>Relies on user's build environment.</li>
+    <li>Pakit recipes can only depend on things pakit can build, currently
+    limited pool. User needs to install any dependencies pakit can't
+    build.</li>
+  </ul>
+  <p>To use pakit, I suggest you have...</p>
+  <ul class="simple">
+    <li>c++ build environment</li>
+    <li>git</li>
+    <li>anything a recipe depends on that pakit can't build</li>
+  </ul>
+  <p>For Ubuntu install these packages:</p>
+  <pre class="code bash literal-block">
+    sudo apt-get install build-essential automake autoconf python-pip git mercurial liblzma-dev libevent-dev ncurses-dev
+  </pre>
+</div>
+
+<div class="section" id="github">
+  <h4>Github</h4>
+  <p>Fetch the latest from the source. Works unless the build badge says
+  failing.</p>
+  <pre class="code bash literal-block">
+    git clone https://github.com/starcraftman/pakit.git
+    <span class="name builtin">export </span><span class="name variable">PATH</span><span class="operator">=</span><span class="keyword">$(</span><span class="name builtin">pwd</span><span class="keyword">)</span>/pakit/bin:<span class="name variable">$PATH</span>
+    python pakit/setup.py deps release
+  </pre>
+</div>
+
+<div class="section" id="pip">
+  <h4>pip</h4>
+  <p>Install the latest stable pip release. It might be old but working.</p>
+  <pre class="code bash literal-block">
+    sudo -H pip install pakit
+  </pre>
+</div>
+
+<div class="section" id="path">
+  <h4>$PATH</h4>
+  <p>By default, pakit will install programs under <tt class="docutils literal">pakit.paths.prefix</tt> and
+  link everything to <tt class="docutils literal">pakit.paths.link</tt>. To use the built programs,
+  <tt class="docutils literal">pakit.paths.link</tt>/bin must be on your $PATH. So for example, with the
+  default value of <tt class="docutils literal">pakit.paths.link</tt>, you would need to:</p>
+  <pre class="code bash literal-block">
+    <span class="name builtin">export </span><span class="name variable">PATH</span><span class="operator">=</span>/tmp/pakit/links/bin:<span class="name variable">$PATH</span>
+  </pre>
+  <p>The above exports will only last for the terminal session. To make them
+  permanent for bash, edit <tt class="docutils literal"><span class="pre">$HOME/.bashrc</span></tt> or <tt class="docutils literal"><span class="pre">$HOME/.bash_aliases</span></tt>.</p>
+</div>
+
+<div class="section" id="more-information">
+  <h3>More Information</h3>
+  <p>From inside the pakit source folder:</p>
+  <ul class="simple">
+    <li>Help: <tt class="docutils literal">pakit <span class="pre">--help</span></tt></li>
+    <li>Consult man: <tt class="docutils literal">man pakit</tt></li>
+    <li>Read pydocs: <tt class="docutils literal">pydoc pakit</tt> or <tt class="docutils literal">pydoc pakit.shell</tt> and so on...</li>
+    <li>Install all development packages: <tt class="docutils literal">python setup.py deps</tt></li>
+    <li>Run the test suite: <tt class="docutils literal">tox</tt></li>
+    <li>See <a class="reference external" href="http://waffle.io/starcraftman/pakit">Waffle</a> for things I'm
+    working on.</li>
+    <li>Read <tt class="docutils literal">DESIGN.md</tt> for details on design. A bit out of date.</li>
+  </ul>
+</div>
+
+<div class="section" id="contributors">
+  <h3>Contributors</h3>
+  <ul class="simple">
+    <li><a href="https://github.com/starcraftman" class="user-mention">@starcraftman</a>/Jeremy Pallats</li>
+  </ul>
+</div>
 
 
-  <div class="section" id="overview">
-    <h1>Overview</h1>
-    <p>Basically I want to make a universal package manager on python. Runs
-    everywhere, builds anything and handles dependencies. A bit like a meta
-    build tool tying arbitrary recipes together. At the end of the day, will
-    probably resemble Homebrew at least a little.</p>
-    <p>Importantly, the recipes should be configurable via a single YAML file
-    that users can modify without changing the recipes. Say you want to pass
-    particular flags to the <tt class="docutils literal">vim</tt> or <tt class="docutils literal">ag</tt> build, you'd just put them in
-    an entry in the config.</p>
+<div class="section" id="overview">
+  <h1>Overview</h1>
+  <p>Basically I want to make a universal package manager on python. Runs
+  everywhere, builds anything and handles dependencies. A bit like a meta
+  build tool tying arbitrary recipes together. At the end of the day, will
+  probably resemble Homebrew at least a little.</p>
+  <p>Importantly, the recipes should be configurable via a single YAML file
+  that users can modify without changing the recipes. Say you want to pass
+  particular flags to the <tt class="docutils literal">vim</tt> or <tt class="docutils literal">ag</tt> build, you'd just put them in
+  an entry in the config.</p>
 
-    <p>Expected Feature Overview:</p>
-    <ul class="simple">
-      <li>Python only, with minimal dependencies.</li>
-      <li>Package manager interface, install remove and update recipes.</li>
-      <li>100% tested, framework &amp; supported recipes.</li>
-      <li>Should work on any POSIX system, emphasis on Linux.</li>
-      <li>Simple recipe specification.</li>
-      <li>Configuration via a single YAML file.</li>
-      <li>Available via <a class="reference external" href="https://pypi.python.org/pypi/pakit">pip</a>.</li>
-      <li>Traceability via logs for every command.</li>
-      <li>Premade &amp; tested recipes available for use.</li>
-    </ul>
+  <p>Expected Feature Overview:</p>
+  <ul class="simple">
+    <li>Python only, with minimal dependencies.</li>
+    <li>Package manager interface, install remove and update recipes.</li>
+    <li>100% tested, framework &amp; supported recipes.</li>
+    <li>Should work on any POSIX system, emphasis on Linux.</li>
+    <li>Simple recipe specification.</li>
+    <li>Configuration via a single YAML file.</li>
+    <li>Available via <a class="reference external" href="https://pypi.python.org/pypi/pakit">pip</a>.</li>
+    <li>Traceability via logs for every command.</li>
+    <li>Premade &amp; tested recipes available for use.</li>
+  </ul>
 
-    <p>See
-    <a class="reference external" href="https://github.com/starcraftman/pakit/blob/master/DESIGN.md">DESIGN.md</a>
-    for more details.</p>
-  </div>
+  <p>See
+  <a class="reference external" href="https://github.com/starcraftman/pakit/blob/master/DESIGN.md">DESIGN.md</a>
+  for more details.</p>
+</div>
+</section>
 
-  <footer>
-    Based on Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-  </footer>
+<footer>
+  Based on Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+</footer>
 
-  </section>
-  </div> <!-- Inner div -->
-  </div> <!-- Container div -->
-  </body>
+</div> <!-- Inner div -->
+</div> <!-- Container div -->
+</body>
 </html>
